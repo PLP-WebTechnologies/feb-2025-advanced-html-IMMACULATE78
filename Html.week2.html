@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Page</title>
+    <style>
+        /* Adding some basic styles to make it look neat */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], select {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HTML5 Page with Forms and Multimedia</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List of Steps</h2>
+    <ol type="I">
+        <li>Learn HTML5 basics</li>
+        <li>Implement images and tables</li>
+        <li>Create forms with validation</li>
+        <li>Embed multimedia (audio, video)</li>
+        <li>Publish and test the website</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>External Image Example</h2>
+    <img src="https://images.pexels.com/photos/123123/pexels-photo-123123.jpeg" alt="Beautiful Nature" style="width:100%; max-width:600px;">
+
+    <!-- Table of Contacts with Kenyan Names -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Mwangi</td>
+            <td>123 Kenyatta St, Nairobi</td>
+            <td>(254) 701-234567</td>
+            <td>john.mwangi@example.co.ke</td>
+        </tr>
+        <tr>
+            <td>Mary Njeri</td>
+            <td>456 Moi Ave, Kisumu</td>
+            <td>(254) 702-345678</td>
+            <td>mary.njeri@example.co.ke</td>
+        </tr>
+        <tr>
+            <td>Joseph Otieno</td>
+            <td>789 Uhuru Rd, Mombasa</td>
+            <td>(254) 703-456789</td>
+            <td>joseph.otieno@example.co.ke</td>
+        </tr>
+        <tr>
+            <td>Grace Wambui</td>
+            <td>101 Ngong Rd, Nairobi</td>
+            <td>(254) 704-567890</td>
+            <td>grace.wambui@example.co.ke</td>
+        </tr>
+        <tr>
+            <td>David Kibet</td>
+            <td>202 Thika Rd, Eldoret</td>
+            <td>(254) 705-678901</td>
+            <td>david.kibet@example.co.ke</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <label for="date">Date of Birth:</label>
+        <input type="date" id="date" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter">
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+            <option value="ethiopia">Ethiopia</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Multimedia Elements -->
+    <h2>Multimedia Elements</h2>
+
+    <!-- Audio Example -->
+    <h3>Audio Example</h3>
+    <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Video Example -->
+    <h3>Video Example</h3>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+  </html>
